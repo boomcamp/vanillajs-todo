@@ -27,6 +27,14 @@ function addTask(task) {
     newTaskForm.classList.toggle('hide');
 }
 
+document.getElementById('newItemInput').addEventListener('keyup', function(key){
+  if(event.keyCode === 13){
+    event.preventDefault();
+    const task = document.getElementById('newItemInput').value.trim();
+    addTask(task);
+  }
+})
+
 document
   .getElementById('saveNewItem')
   .addEventListener('click', function(event) {
@@ -34,7 +42,8 @@ document
     const task = document.getElementById('newItemInput').value.trim();
     addTask(task);
   });
-  document.getElementById('logo-new-todo').addEventListener('click', function(){
+
+    document.getElementById('logo-new-todo').addEventListener('click', function(){
       newTaskForm.classList.toggle('hide');
   })
 
