@@ -179,3 +179,18 @@
 .hide {
   display: none;
 }
+
+.text-red{
+    color: salmon;
+    font-weight: bold;
+}
+
+.text-green{
+    color: lightseagreen;
+    font-weight: bold;
+}
+
+.text-blue{
+    color: skyblue;
+    font-weight: bold;
+}
