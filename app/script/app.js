@@ -34,6 +34,9 @@ document
     const task = document.getElementById('newItemInput').value.trim();
     addTask(task);
   });
+  document.getElementById('logo-new-todo').addEventListener('click', function(){
+      newTaskForm.classList.toggle('hide');
+  })
 
   document.getElementById('add-todo').addEventListener('click', function() {
     newTaskForm.classList.toggle('hide');
