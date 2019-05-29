@@ -18,7 +18,7 @@ function addTask(task){
         const item = document.getElementById('newList').appendChild(taskElem);
         item.innerHTML = `
             <a id="new" class="list-group-item">
-                ${newTask.task}
+                ${newTask.task}<br>
             </a>
             `;
     }
