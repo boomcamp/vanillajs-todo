@@ -6,7 +6,28 @@
     <link rel="stylesheet" href="styles/base/reset.css" />
     <link rel="stylesheet" href="styles/base/fonts.css" />
     <link rel="stylesheet" href="styles/views/landing.css" />
+  
+    <style>
+      .new .list-group a:hover{
+        color: #54BBE9;
+        font-size:20px;
+        cursor: all-scroll;
+      }
+      .in-progress .list-group a:hover{
+        color: #E9E954;
+        font-size:20px;
+        cursor: all-scroll;
+      }
+      .completed .list-group a:hover{
+        color: #F44747;
+        font-size:20px;
+        cursor: all-scroll;
+      }
+    </style>
+
   </head>
+
+
   <body>
     <main class="main-wrapper">
       <!--MAIN HEADER -->
@@ -27,16 +48,16 @@
 
       <!-- to-do main container -->
       <section class="todo-main-container">
-        <div class="progress-box">
+        <div class="progress-box new">
           <h3>New Todos</h3>
           <ul class="list-group" id="newList"></ul>
         </div>
-        <div class="progress-box">
+        <div class="progress-box in-progress">
           <h3>In Progress</h3>
           <ul class="list-group" id="currentList"></ul>
         </div>
         
-        <div class="progress-box">
+        <div class="progress-box completed">
           <h3>Complete</h3>
           <ul class="list-group" id="archivedList"></ul>
         </div>
