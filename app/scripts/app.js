@@ -1,3 +1,6 @@
+const newTaskForm = document.getElementById('newTaskForm')
+newTaskForm.classList.toggle('hide')
+
 const list = [];
 
 function Task(task){
@@ -27,9 +30,7 @@ function addTask(task) {
 
 
 
-  document
-  .getElementById('saveNewItem')
-  .addEventListener('click', function(event) {
+  document.getElementById('saveNewItem').addEventListener('click', function(event) {
     event.preventDefault();
     const task = document.getElementById('newItemInput').value.trim();
     addTask(task);
