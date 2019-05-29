@@ -35,3 +35,12 @@ document
     addTask(task);
   });
 
+  document.getElementById('add-todo').addEventListener('click', function() {
+    newTaskForm.classList.toggle('hide');
+  });
+  
+  document.getElementById('cancel').addEventListener('click', function(event) {
+    event.preventDefault();
+    newTaskForm.classList.toggle('hide');
+  });
+
