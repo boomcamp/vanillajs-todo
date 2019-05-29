@@ -18,7 +18,7 @@ function addTask(task) {
   
       const item = document.getElementById('newList').appendChild(taskElem);
       item.innerHTML = `
-          <a id="new" class="list-group-item">
+          <a id="new" class="list-group-item text-blue">
             ${newTask.task}
           </a>
         `;
@@ -50,6 +50,7 @@ document
   document.getElementById('newList').addEventListener('click', function(event) {
     if (event.target.matches('a.list-group-item')) { 
       event.target.id = 'inProgress';
+      event.target.classList = 'list-group-item text-green'
       document.getElementById('currentList').append(event.target);
     }
   });
@@ -59,6 +60,7 @@ document
   .addEventListener('click', function(event) {
     if (event.target.matches('a.list-group-item')) {
       event.target.id = 'archived';
+      event.target.classList = 'list-group-item text-red'
       document.getElementById('archivedList').append(event.target);
     }
   });
