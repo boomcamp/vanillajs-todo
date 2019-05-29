@@ -43,3 +43,25 @@ document.getElementById('cancel').addEventListener('click', function() {
     event.preventDefault();
     newTaskForm.classList.toggle('hide');
 });
+
+document.getElementById('newList').addEventListener('click', function(event) {
+    if (event.target.matches('a.list-group-item')) { 
+      event.target.id = 'inProgress';
+      document.getElementById('currentList').append(event.target);
+    }
+});
+
+document.getElementById('currentList').addEventListener('click', function(event) {
+    if (event.target.matches('a.list-group-item')) {
+      event.target.id = 'archived';
+      document.getElementById('archivedList').append(event.target);
+    }
+  });
+
+  document.getElementById('archivedList').addEventListener('click', function(event) {
+    if (event.target.matches('a.list-group-item')) {
+      const itemText = event.target.innerText
+      list.splice(list.findIndex(function(item) { return item.task === itemText }, 1))
+      event.target.remove();
+    }
+  })
