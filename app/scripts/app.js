@@ -3,6 +3,7 @@ const list = [];
 
 
 const newTaskForm = document.getElementById('newTaskForm');
+ newTaskForm.classList.toggle('hide');
 
 //constructor
 function Task(task) {
