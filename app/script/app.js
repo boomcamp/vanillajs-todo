@@ -27,3 +27,11 @@ function addTask(task) {
     newTaskForm.classList.toggle('hide');
 }
 
+document
+  .getElementById('saveNewItem')
+  .addEventListener('click', function(event) {
+    event.preventDefault();
+    const task = document.getElementById('newItemInput').value.trim();
+    addTask(task);
+  });
+
