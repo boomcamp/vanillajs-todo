@@ -54,9 +54,7 @@ document.getElementById('add-todo').addEventListener('click', function() {
 
 document.getElementById('newList').addEventListener('click', function(event) {
     if (event.target.matches('a.list-group-item')) { // matches is a method available on an Element, it checks if the element matches the specified selector (just like a CSS selector)
-      event.target += '<br>';
-      console.log(event.target);
-      console.log(event.target.id = 'inProgress');
+      event.target.id = 'inProgress';
       document.getElementById('currentList').append(event.target);
     }
 });
