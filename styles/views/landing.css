@@ -85,6 +85,16 @@
     padding-top: 30px;
 }
 
+#completedTask {
+    width: 100%;
+    height: 650px;
+    background: #3E3D41;
+    position: absolute;
+    bottom: 80px;
+    text-align: center;
+    padding-top: 30px;
+}
+
 .todo-form-title {
     font-size: 24px;
     color: #fff;
@@ -141,6 +151,10 @@
     cursor: pointer;
 }
 
+.view-all{
+    justify-self: flex-end;
+}
+
 .show-add-todo {
     display: inline-block;
 }
@@ -178,4 +192,19 @@
 
 .hide {
   display: none;
+}
+
+.text-red{
+    color: salmon;
+    font-weight: bold;
+}
+
+.text-green{
+    color: lightseagreen;
+    font-weight: bold;
+}
+
+.text-blue{
+    color: skyblue;
+    font-weight: bold;
 }
