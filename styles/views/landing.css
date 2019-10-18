@@ -179,3 +179,7 @@
 .hide {
   display: none;
 }
+
+#inProgress,#archived{
+    display: block;
+}
