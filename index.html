@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/base/reset.css" />
     <link rel="stylesheet" href="styles/base/fonts.css" />
     <link rel="stylesheet" href="styles/views/landing.css" />
+  
   </head>
   <body>
     <main class="main-wrapper">
@@ -27,12 +28,34 @@
 
       <!-- to-do main container -->
       <section class="todo-main-container">
+          <div class="progress-box">
+              <h3>New Todos</h3>
+              <ul class="list-group" id="newList">
+              
+              </ul>
+            </div>
+        
         <div class="progress-box">
-          <h3>New Todos</h3>
-          <ul class="list-group" id="newList"></ul>
-        </div>
+            <h3>In Progress</h3>
+            <ul class="list-group" id="currentList"></ul>
+          </div>
+          
+          <div class="progress-box">
+            <h3>Complete</h3>
+            <ul class="list-group" id="archivedList"></ul>
+          </div>
+
+        
 
         <!--Add progress-box from the readme-->
+        <section id="newTaskForm">
+          <h3 class="todo-form-title">New To Do </h3>
+          <div  class="form-input-container">
+            <img id="cancel" src="./img/icons/cross.png" alt="close form icon">
+            <input id="newItemInput" class="todo-title-input form-input" type="text" placeholder="To-Do Title">
+            <button  id="saveNewItem" class="complete-todo-button">Add To Do</button>
+          </div>
+        </section>
       </section>
 
       <!-- FORM -->
@@ -48,7 +71,14 @@
         />
       </footer>
 
-      <!--Include your script file here -->
+      <script src="./app/scripts/app.js"></script>
     </main>
+
+
+    
+
+
+
   </body>
 </html>
+
