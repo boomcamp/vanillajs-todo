@@ -18,14 +18,6 @@ document
   addTask(task);
 });
 
-
-document.getElementById('newList').addEventListener('click', function(event) {
-  if (event.target.matches('a.list-group-item')) {
-    event.target.id = 'inProgress';
-    document.getElementById('currentList').append(event.target);
-  }
-});
-
 document.getElementById('add-todo').addEventListener('click', function(){
   newTaskForm.classList.toggle('hide');
 });
@@ -36,7 +28,7 @@ document.getElementById('cancel').addEventListener('click', function(event){
 });
 
 document.getElementById('newList').addEventListener('click', function(event) {
-  if (event.target.matches('a.list-group-item')) { // matches is a method available on an Element, it checks if the element matches the specified selector (just like a CSS selector)
+  if (event.target.matches('a.list-group-item')) {
     event.target.id = 'inProgress';
     document.getElementById('currentList').append(event.target);
   }
