@@ -170,10 +170,12 @@
 
 .list-group {
     margin-top: 15px;
+    display: block;
 }
 
 .list-group-item {
   color: #fff;
+  display: block;
 }
 
 .hide {
